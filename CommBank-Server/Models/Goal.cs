@@ -11,7 +11,7 @@ public class Goal
 
     public string? Name { get; set; }
 
-    public UInt64 TargetAmount { get; set; } = 0;
+    public int TargetAmount { get; set; } = 0;
 
     public DateTime TargetDate { get; set; }
 
@@ -27,4 +27,6 @@ public class Goal
 
     [BsonRepresentation(BsonType.ObjectId)]
     public string? UserId { get; set; }
+
+    public string? Icon { get; set; }
 }
